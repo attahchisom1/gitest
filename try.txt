@@ -1,1 +1,23 @@
-just to try something
+#just to try something
+#STEPS TO CREATE REPO FROM COMMAND LINE
+
+1. mkdir repo_name
+2. git init
+3 create README.md and any other file
+4. git add .
+5. git commit -m "anything u want to write"
+6. You can change name of branch if u want. by default  l, branch name is master  assuming we want to change it to main
+
+       git branch -m main
+
+7. curl -u 'git_username' https://api.github.com/user/repos -d '{ "name":"repo_name","public or private": true or false, etc }
+
+8.copy ssh or https url then run
+
+     git remote add remote_banch_name(usually "origin") ssh or https url of rwmote branch
+
+     NOTE: 
+     https -----> https://github.com/github_username/repo_name.git
+     ssh   -----> git@github.com:github_username/repo_name.git
+
+9. git push -u remote_branch_name main or any_local_branch_name_you_are_in
